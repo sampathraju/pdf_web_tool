@@ -15,8 +15,8 @@ def run_processing(input_pdf_path, output_folder_path):
     """
     Main pipeline: run Java jar, clean HTML, convert to XHTML.
     """
-    os.makedirs(output_folder_path, exist_ok=True)
-
+    
+os.makedirs(output_folder_path, exist_ok=True)
     # Step 1: Extract JAR if not already extracted
     os.makedirs(EXTRACT_DIR, exist_ok=True)
     jar_path = os.path.join(EXTRACT_DIR, JAR_FILE_NAME)
